@@ -1,6 +1,6 @@
 ## 封装可视化页面的载体 Card
 
-### 使用效果展示![image-20220504195054471](https://github.com/WangUnique/PackageComponents/blob/master/PC%E5%8F%AF%E8%A7%86%E5%8C%96%E9%A1%B5%E9%9D%A2/assets/img/cart.png)
+### 使用效果展示![image-20220504195054471](https://github.com/WangUnique/PackageComponents/blob/master/PC%E7%AB%AF/%E5%8F%AF%E8%A7%86%E5%8C%96%E9%A1%B5%E9%9D%A2/assets/img/cart.png)
 
 ### template 代码展示
 
@@ -72,15 +72,13 @@ withDefaults(
 
 ### 推荐文件放置路径
 
->  src > base-ui > card
+> src > base-ui > card
 
 - `src:` vue/cli 的根目录
 - `base-ui:` 通常用来放置多个项目都可以使用的模块，具有很强的通用性
 - `card:` 见名知意的 filename 容易分辨
   - card 文件夹内部可以创建一个 `index.ts` 作为整个模块的出入口
   - 可以创建一个`src`目录放置`模块.vue`文件
-
-
 
 ### 使用方法
 
@@ -107,19 +105,16 @@ withDefaults(
 </el-row>
 ```
 
-
-
 ### 时间及版本
 
-> ​	创建时间
+> ​ 创建时间
 
-- `2022年5月4日	四月初四	星期三`
+- `2022年5月4日 四月初四 星期三`
 
-> ​	对应库/框架版本:
+> ​ 对应库/框架版本:
 
 - `"vue": "^3.2.13"`
 - `"element-plus": "^2.1.7"`
 - `"typescript": "~4.5.5"`
 - `"less": "^4.0.0"`
 - `"less-loader": "^8.0.0"`
-

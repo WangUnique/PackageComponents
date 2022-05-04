@@ -1,10 +1,8 @@
-## 封装可视化页面的载体Card
+## 封装可视化页面的载体 Card
 
 ### 使用效果展示![image-20220504195054471](C:\Users\Administrator\Desktop\image-20220504195054471.png)
 
-
-
-### template代码展示
+### template 代码展示
 
 ```vue
 <template>
@@ -24,27 +22,24 @@
 </template>
 ```
 
-
-
-### setup代码展示
+### setup 代码展示
 
 ```vue
 <script lang="ts" setup>
-    import { defineProps, withDefaults } from 'vue'
-    withDefaults(
-      defineProps<{    // 泛型的基本使用方法 对应props应为 {title: '...'}
-        title: string
-      }>(),
-      {
-        title: 'Title'   // 默认值
-      }
-    )
+import { defineProps, withDefaults } from "vue";
+withDefaults(
+  defineProps<{
+    // 泛型的基本使用方法 对应props应为 {title: '...'}
+    title: string;
+  }>(),
+  {
+    title: "Title", // 默认值
+  }
+);
 </script>
 ```
 
-
-
-### css代码展示
+### css 代码展示
 
 ```css
 <style lang="less" scoped>
@@ -71,34 +66,31 @@
 </style>
 ```
 
-
-
 ### 推荐文件放置路径
 
-> ​	src	>	base-ui	>	card
+> ​ src > base-ui > card
 
 - `src:` vue/cli 的根目录
 - `base-ui:` 通常用来放置多个项目都可以使用的模块，具有很强的通用性
-- `card:` 见名知意的filename容易分辨
+- `card:` 见名知意的 filename 容易分辨
   - card 文件夹内部可以创建一个 `index.ts` 作为整个模块的出入口
   - 可以创建一个`src`目录放置`模块.vue`文件
 
-​	
+​
 
 ### 使用方法
 
 ```html
-<!-- :gutter   栅格间隔 -->    
-	<el-row :gutter="10">
-      <el-col :span="7">
-        <wk-card title="test1"> </wk-card>
-      </el-col>
-      <el-col :span="10">
-        <wk-card title="test2"> </wk-card>
-      </el-col>
-      <el-col :span="7">
-        <wk-card title="test3"> </wk-card>
-      </el-col>
-    </el-row>
+<!-- :gutter   栅格间隔 -->
+<el-row :gutter="10">
+  <el-col :span="7">
+    <wk-card title="test1"> </wk-card>
+  </el-col>
+  <el-col :span="10">
+    <wk-card title="test2"> </wk-card>
+  </el-col>
+  <el-col :span="7">
+    <wk-card title="test3"> </wk-card>
+  </el-col>
+</el-row>
 ```
-

@@ -1,6 +1,6 @@
 ## 封装可视化页面的载体 Card
 
-### 使用效果展示![image-20220504195054471](C:\Users\Administrator\Desktop\image-20220504195054471.png)
+### 使用效果展示![image-20220504195054471](https://github.com/WangUnique/PackageComponents/blob/master/PC%E5%8F%AF%E8%A7%86%E5%8C%96%E9%A1%B5%E9%9D%A2/assets/img/cart.png)
 
 ### template 代码展示
 
